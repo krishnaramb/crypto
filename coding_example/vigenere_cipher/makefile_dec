@@ -1,0 +1,14 @@
+dec:dec.o
+	gcc dec.o -o dec
+
+
+dec.o: dec.c
+	gcc -c dec.c
+
+
+clean:
+	rm -rf *.o
+	rm -rf dec
+
+run:
+	./dec

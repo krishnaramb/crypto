@@ -1,0 +1,14 @@
+output:vigenere.o
+	g++ vigenere.o -o output
+
+
+vigenere.o: vigenere.c++
+	g++ -c vigenere.c++
+
+
+clean:
+	rm -rf *.o
+	rm -rf output
+
+run:
+	./output

@@ -1,0 +1,14 @@
+output:random.o
+	gcc random.o -o output
+
+
+random.o: random.c
+	gcc -c random.c
+
+
+clean:
+	rm -rf *.o
+	rm -rf output
+
+run:
+	./output

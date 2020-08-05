@@ -1,0 +1,14 @@
+enc:enc.o
+	gcc enc.o -o enc
+
+
+enc.o: enc.c
+	gcc -c enc.c
+
+
+clean:
+	rm -rf *.o
+	rm -rf enc
+
+run:
+	./enc
